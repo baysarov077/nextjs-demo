@@ -1,4 +1,5 @@
 import { useRouter } from "next/router"
+import MainContainer from "../../components/MainContainer"
 import styles from '../../styles/user.module.scss'
 
 export default function User({user}) {
@@ -6,10 +7,10 @@ export default function User({user}) {
   const {query} = useRouter()
 
   return (
-    <div className={styles.user}>
+    <MainContainer className={styles.user}>
       <h1>Пользователь c id {query.id}</h1>
       <p>Имя пользователя: {user.name}</p>
-    </div>
+    </MainContainer>
   )
 }
 

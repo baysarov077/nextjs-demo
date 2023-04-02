@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import A from "../components/A";
+import MainContainer from "../components/MainContainer";
 
 const Users = ({users}) => {
 
   return (
-    <div>
-      <A text={'Главная'} href={'/'}/>
+    <MainContainer>
       <h1>Пользователи</h1>
       <div>
         <ul>
@@ -15,7 +13,7 @@ const Users = ({users}) => {
           })}
         </ul>
       </div>
-    </div>
+    </MainContainer>
   );
 };
 
